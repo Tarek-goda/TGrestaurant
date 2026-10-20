@@ -1,70 +1,52 @@
-# McDonald's Restaurant Web Project
+# TG Restaurant
 
-This repository contains a web-based restaurant application for McDonald's, built using HTML, CSS (Bootstrap & Tailwind), and JavaScript. The project is organized into two main sections:
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Deployments](https://img.shields.io/badge/Deployments-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
 
-- **Home page**: Main landing, About Us, Contact, Cart, and Menu pages
-- **menu page**: Additional Cart page
-- **Projcet Live** : https://mc-restaurant.netlify.app/
+A responsive, multi-page restaurant website built with HTML, CSS, and JavaScript.
+
+**Live demo:** [tg-restaurant.vercel.app](https://tg-restaurant.vercel.app/index.html)
+
 ## Features
-- Responsive navigation bar with links to all main pages
-- Dynamic menu with add-to-cart functionality
-- Cart management using localStorage
-- Contact form and About Us information
-- Modern UI using Bootstrap, Tailwind, and FontAwesome
+
+- Responsive navigation between Home, Menu, About Us, Contact, and Cart.
+- Clean, user-friendly design for a restaurant website.
+- Static site deployment on Vercel, with automatic deployments from GitHub.
 
 ## Project Structure
-```
-Home page/
-├── About-Us page/
-│   ├── aboutus.html, aboutus.css, aboutus.js
-├── Cart Page/
-│   ├── Cart.html, Cart.css, Cart.js
-├── Contact  page/
-│   ├── Contact.html, Contact.css, Contact.js
+
+```text
+src/
 ├── index.html
 ├── menu.html
-├── menu.js
 ├── menu.css
+├── menu.js
 ├── style.css
-├── main.js
-├── images (various)
-menu page/
-└── Cart Page/
-    └── Cart.html
+├── Contact/
+│   ├── Contact.html
+│   └── Contact.css
+├── about/
+│   ├── aboutus.html
+│   └── aboutus.css
+├── cart/
+│   ├── Cart.html
+│   ├── Cart.css
+│   └── Cart.js
+└── img/                 # Images and shared visual assets
 ```
 
-## Getting Started
-1. **Clone the repository:**
+## Run Locally
+
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Tarek-goda/Mc-restaurant.git
    ```
-2. **Open `index.html` in your browser** to view the Home page.
-3. **Navigate using the navbar** to explore Menu, Cart, Contact, and About Us pages.
 
-## Technologies Used
-- HTML5
-- CSS3 (Bootstrap 5, Tailwind CSS)
-- JavaScript (ES6)
-- FontAwesome for icons
-
-## How the Cart Works
-- Products are added to the cart from the menu page.
-- Cart data is stored in `localStorage` for persistence.
-- Cart contents can be viewed and managed from the Cart page.
-
-## Customization
-- Update images and content in the respective HTML files.
-- Modify styles in `menu.css`, `style.css`, and component-specific CSS files.
+2. Open `src/index.html` in a browser, or open the repository in VS Code and launch `src/index.html` with the Live Server extension.
 
 ## Deployment
-You can deploy this project on GitHub Pages or any static hosting service. Just upload the contents of the project folder.
 
-## License
-This project is for educational purposes.
-
----
-<<<<<<< HEAD
-Feel free to contribute or open issues for suggestions!
-=======
-Feel free to contribute or open issues for suggestions!
->>>>>>> dec8108db962252f99cdedb153afdaabebcf5f02
+The site is deployed on [Vercel](https://vercel.com/) and configured to publish the `src/` directory. GitHub deployments are automated when changes are pushed to the connected repository.
